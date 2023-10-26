@@ -6,7 +6,7 @@ public class Main {
     static Scanner sc = new Scanner(System.in);
     static String[] pakli = new String[22];
     static String[] szinek = {"P", "T", "Z", "M"};
-    static String[] ertekek = {"Ász", "Kir", "Fel", "X", "IX", "VIII"};
+    static String[] ertekek = {"Asz", "Kir", "Fel", "X", "IX", "VIII"};
 
 
     public static void main(String[] args) {
@@ -30,7 +30,10 @@ public class Main {
 
     public static void kirak(){
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 508aaced0aed2601ca8801a2d13e96a7dce7726b
 
         for (int i = 1; i < pakli.length; i++) {
             System.out.printf("%-9s", pakli[i] + " ");
@@ -62,14 +65,22 @@ public class Main {
                     cserePakli[i] = pakli[20 - (i - 1) * 3];
                     cserePakli[i + 7] = pakli[19- (i - 1) * 3];
                     cserePakli[i + 14] = pakli[21 - (i - 1) * 3];
-                } break;
-            case 2: 
-                for(int i = 1; i < 8; i++){
-                   cserePakli[i] = pakli[19-(i-1) * 3];
-                   cserePakli[i+7] = pakli[20-(i-1) * 3];
-                   cserePakli[i+14] = pakli[21-(i-1) * 3];
-                }break;
-            case 3: break;
+                }
+                break;
+            case 2:
+                for (int i = 1; i < 8; i++) {
+                    cserePakli[i] = pakli[19 - (i - 1) * 3];
+                    cserePakli[i + 7] = pakli[20 - (i - 1) * 3];
+                    cserePakli[i + 14] = pakli[21 - (i - 1) * 3];
+                }
+                break;
+            case 3:
+                for (int i = 1; i < 8 ; i++) {
+                    cserePakli[i] = pakli[19 - (i - 1) * 3];
+                    cserePakli[i + 7] = pakli[21 - (i - 1) * 3];
+                    cserePakli[i + 14] = pakli[20 - (i - 1) * 3];
+                }
+                break;
         }
 
         pakli = cserePakli;
