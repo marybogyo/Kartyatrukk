@@ -29,12 +29,7 @@ public class Main {
     }
 
     public static void kirak(){
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 508aaced0aed2601ca8801a2d13e96a7dce7726b
-
+        
         for (int i = 1; i < pakli.length; i++) {
             System.out.printf("%-9s", pakli[i] + " ");
             if (i % 3 == 0){
