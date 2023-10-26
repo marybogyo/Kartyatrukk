@@ -56,8 +56,16 @@ public class Main {
         String[] cserePakli = new String[22];
 
         switch (oszlop) {
-            case 1: break;
-            case 2: break;
+            case 1: 
+               
+                break;
+            case 2: 
+             for(i = 1, i < 7, 1++){
+                cserePakli[i] = pakli[19-(i-1) * 3]
+                cserePakli[i+7] = pakli[20-(i-1) * 3]
+                cserePakli[i+14] = pakli[21-(i-1) * 3]
+             }
+             break;
             case 3: break;
         }
 
